@@ -1,6 +1,8 @@
 class NopeCHAError(Exception):
     def __init__(self, message=None, http_body=None, http_status=None, json_body=None, headers=None):
         super(NopeCHAError, self).__init__(message)
+        
+        print("error")
 
         self._message = message
         self.http_body = http_body
